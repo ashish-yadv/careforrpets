@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(197, 194, 194);
+}
+
+
+/* HOME PAGE */
+.home {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/home-background.png) no-repeat fixed center center/cover;
+}
+
+.navbar {
+    width: 100%;
+    height: 9vh;
+    background: rgba(0, 0, 0, 0.09);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.navbar #logo {
+    width: 18vw;
+    filter: invert(100%);
+    transition: 0.3s;
+}
+
+.navbar #logo:hover {
+    cursor: pointer;
+    filter: invert(40%);
+}
+
+.home .navbar .menu
+
+/* ->(ul)*/
+    {
+    /* z-index: +1; */
+    width: 24vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.home .navbar .menu li {
+    list-style: none;
+}
+
+.home .navbar .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    position: relative;
+}
+
+.home .navbar .menu li a:hover {
+    color: rgb(112, 111, 111);
+}
+
+.home .navbar .menu li a::after {
+    background-color: #0a83e6;
+    content: '';
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+.home .navbar .menu li a #down-arrow-head {
+    width: 20px;
+    height: 7px;
+    filter: invert(100%);
+    position: relative;
+    bottom: 1.9px;
+}
+
+.home .navbar .menu li a #down-arrow-head:hover {
+    cursor: pointer;
+    filter: invert(40%);
+}
+
+.home .navbar .menu,
+.navbar #logo {
+    margin: 0 9vw;
+}
+
+#slogan {
+    color: white;
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18vw;
+    font-size: 5vw;
+    text-align: center;
+}
+
+/* BLOGS SECTION STARTS HERE */
+.blogs span #blogs-heading {
+    display: inline-block;
+    margin: 20px 45% 0;
+    text-decoration: none;
+    color: black;
+    font-weight: 660;
+    font-size: 40px;
+}
+
+.blogs span #blogs-heading::after {
+    content: '';
+    width: 70%;
+    height: 1.9px;
+    display: block;
+    margin: auto;
+    background: #0a83e6;
+}
+
+.blogs #slider-posts-carousel {
+    width: 100%;
+    height: 70vh;
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.blogs #slider-posts-carousel .posts {
+    box-sizing: border-box;
+    height: 60vh;
+    max-width: 20vw;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 25px 15px;
+    background-color: rgba(210, 208, 208, 0.297);
+    border-radius: 10px;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.077);
+    transition: 0.3s;
+}
+
+.blogs #slider-posts-carousel .posts:hover {
+    cursor: pointer;
+    transform: scale(1.07, 1.07);
+}
+
+/* BLOGS SECTION ENDS HERE */
+
+/* OUR MISSION STARTS HERE */
+.our-mission {
+    /* background-color: red; */
+    height: 70vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.our-mission h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+    text-decoration: none;
+    color: black;
+    font-weight: 660;
+    font-size: 40px;
+}
+
+.our-mission h1::after {
+    content: '';
+    width: 12%;
+    height: 1.9px;
+    margin: auto;
+    background: #0a83e6;
+}
+
+.our-mission #our-mission-container {
+    /* background-color: blue; */
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.our-mission #our-mission-container .info-about-our-mission {
+    background-color: rgba(0, 0, 0, 0.137);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.077);
+    color: rgb(0, 0, 0);
+    width: 40%;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.our-mission #our-mission-container .info-about-our-mission span {
+    margin: 21px;
+}
+
+/* OUR MISSION ENDS HERE */
+
+
+
+/* FOOTER STARTS HERE */
+
+footer {
+    width: 100%;
+    height: 20vh;
+    color: white;
+    font-weight: 500;
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer #footer_contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer #footer_contact li {
+    list-style: none;
+}
+
+footer #footer_contact li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer #footer_contact li a:hover {
+    color: rgb(169, 167, 167);
+}
+
+/* FOOTER ENDS HERE */
